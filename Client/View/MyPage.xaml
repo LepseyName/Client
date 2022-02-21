@@ -1,0 +1,25 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.View"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Client.View.MyPage"
+        mc:Ignorable="d"
+        Title="MyPage" Height="450" Width="800">
+
+    <Grid>
+        <Button Content="Update" HorizontalAlignment="Left" Margin="352,25,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click"/>
+        <Button Content="Add New" HorizontalAlignment="Left" Margin="272,25,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <GroupBox Header="Cards" HorizontalAlignment="Left" Height="359" Margin="10,50,0,0" VerticalAlignment="Top" Width="772">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden">
+                <Grid x:Name="Plane" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Width="752" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+            </ScrollViewer>
+        </GroupBox>
+        <ComboBox x:Name="sortBox" HorizontalAlignment="Left" Margin="432,23,0,0" VerticalAlignment="Top" Width="85" SelectionChanged="ComboBox_SelectionChanged" SelectedIndex="0">
+            <System:String>Name</System:String>
+            <System:String>None</System:String>
+        </ComboBox>
+    </Grid>
+
+</Window>

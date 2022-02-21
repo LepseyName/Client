@@ -1,0 +1,22 @@
+﻿<Window x:Class="Client.View.Editor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.View"
+        mc:Ignorable="d"
+        Title="Editor" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="772">
+            <StackPanel Height="258" Orientation="Horizontal">
+                <Image x:Name="image" HorizontalAlignment="Center" Height="198" VerticalAlignment="Center" Width="359" Source="del.png" Margin="0,18,0,42"/>
+                <Button Content="Select photo" Margin="100,100,0,100" Width="80" VerticalAlignment="Center" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Click="Button_Click"/>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="772" TextAlignment="Center" Text="Entrer Name"/>
+            <TextBox x:Name="nameText" Height="23" TextWrapping="Wrap" TextAlignment="Center" MaxLines="1"/>
+            <Button x:Name="saveButton" Content="Save" Padding="1" Margin="0,60,0,0" Width="100" Click="Button_Click_1"/>
+        </StackPanel>
+        <PasswordBox HorizontalAlignment="Left" Margin="-40,-20,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
